@@ -1,4 +1,4 @@
-select distinct c.first_name from rental r 
+select c.first_name from rental r 
 join customer c on r.customer_id=c.customer_id 
 join address a on c.address_id=a.address_id 
 join city ci on ci.city_id=a.city_id 
